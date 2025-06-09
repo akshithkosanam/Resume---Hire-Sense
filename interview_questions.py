@@ -8,11 +8,11 @@ interview questions given some free-text (resume, JD, etc.).
 import google.generativeai as genai
 
 # ❶ —-–– SET YOUR KEY HERE  (keep it secret in real projects!)
-GEMINI_API_KEY = "AIzaSyBDZZJ4NxgNqiQvMHY3JQF2lY-fRZQWCJs"
+GEMINI_API_KEY = "............"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # ❷ —-–– The model object can be reused for every call
-_model = genai.GenerativeModel("gemini-1.5-flash")
+_model = genai.GenerativeModel("...........")
 
 def generate_interview_questions(text: str, n: int = 5) -> list[str]:
     """
